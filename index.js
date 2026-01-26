@@ -1,10 +1,10 @@
-const btn = document.querySelector(".btn")
-const video= document.querySelector(". background-video");
-const fa = document.querySelector(".fa")
-const preloader = document.querySelector(". preloader")
+const btn = document.querySelector(".btn");
+const video = document.querySelector(".background-video");
+const fa = document.querySelector(".fa-solid");
+const preloader = document.querySelector(".preloader");
 
-btn.addEventListener("click", ()=>{
-    if(btn.classList.contains("pause")){
+btn.addEventListener("click", () => {
+    if (btn.classList.contains("pause")) {
         btn.classList.remove("pause");
         video.play();
         fa.classList.add("fa-pause");
@@ -18,5 +18,5 @@ btn.addEventListener("click", ()=>{
 });
 
 window.addEventListener("load", () => {
-    preloader.style.zindex = "-2";
+    preloader.style.zIndex = "-2"; // hides preloader after page load
 });
